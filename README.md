@@ -16,3 +16,6 @@ All the steps for point cloud classification are detailed in [PointNet-PCD-Class
 
 1. <a name='sparenet'>https://github.com/microsoft/SpareNet/</a>
 2. <a name='pointnet'>https://github.com/yanx27/Pointnet_Pointnet2_pytorch</a>
+3. <a name='GAN2Shape'>https://github.com/XingangPan/GAN2Shape</a>
+4. <a name='StyleGAN2'>https://github.com/rosinality/stylegan2-pytorch</a>
+5. <a name='DenseDepth'>https://github.com/ialhashim/DenseDepth</a>
