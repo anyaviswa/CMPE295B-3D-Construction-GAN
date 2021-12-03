@@ -1,0 +1,11 @@
+__init__.py
+gridding.cu
+gridding_cuda.cpp
+gridding_reverse.cu
+setup.py
+test.py
+dist/gridding-2.1.0-py3.6-linux-x86_64.egg
+gridding.egg-info/PKG-INFO
+gridding.egg-info/SOURCES.txt
+gridding.egg-info/dependency_links.txt
+gridding.egg-info/top_level.txt

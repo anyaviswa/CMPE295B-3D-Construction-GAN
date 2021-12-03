@@ -1,0 +1,4 @@
+# ninja log v5
+1	37915	1638488176000000000	/content/drive/MyDrive/SpareNet/cuda/gridding/build/temp.linux-x86_64-3.7/gridding_cuda.o	6d9a5eb4c38d2b0
+1	70929	1638488209000000000	/content/drive/MyDrive/SpareNet/cuda/gridding/build/temp.linux-x86_64-3.7/gridding.o	5e62d62ad42dd90b
+2	73295	1638488211000000000	/content/drive/MyDrive/SpareNet/cuda/gridding/build/temp.linux-x86_64-3.7/gridding_reverse.o	f4123033b34d9ab7
