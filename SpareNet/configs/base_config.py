@@ -99,10 +99,11 @@ __C.DATASETS.shapenet.n_renderings = 8
 __C.DATASETS.shapenet.n_points = 16384
 # 'GRnet' or 'ShapeNet' version dataset
 __C.DATASETS.shapenet.version = "GRnet"
+# Training data
 __C.DATASETS.shapenet.category_file_path = "./datasets/data/ShapeNet.json"
-__C.DATASETS.shapenet.partial_points_path = "/content/drive/MyDrive/KITTI-Cars/partial/%s/%02d.pcd"
-__C.DATASETS.shapenet.complete_points_path = "/content/drive/MyDrive/KITTI-Cars/complete/%s.pcd"
-__C.DATASETS.shapenet.bounding_box_file_path = "/content/drive/MyDrive/bboxes/bboxes/%s.txt"
+__C.DATASETS.shapenet.partial_points_path = "./datasets/data/KITTI-Cars/partial/%s/%02d.pcd"
+__C.DATASETS.shapenet.complete_points_path = "./datasets/data/KITTI-Cars/complete/%s.pcd"
+__C.DATASETS.shapenet.bounding_box_file_path = "./datasets/data/bboxes/bboxes/%s.txt"
 __C.DATASETS.completion3d = edict()
 __C.DATASETS.completion3d.category_file_path = "/path/to/datasets/data/Completion3D.json"
 __C.DATASETS.completion3d.partial_points_path = "/path/to/datasets/completion3d/data/shapenet/%s/partial/%s/%s.h5"
@@ -111,14 +112,15 @@ __C.DATASETS.kitti = edict()
 __C.DATASETS.kitti.n_renderings = 8
 __C.DATASETS.kitti.n_points = 16384
 __C.DATASETS.kitti.version = "GRnet"
+# Test data - Model inferencing
 __C.DATASETS.kitti.category_file_path = "./datasets/data/KITTI.json"
-__C.DATASETS.kitti.partial_points_path = "/content/drive/MyDrive/cars/cars/%s.pcd"
-__C.DATASETS.kitti.bounding_box_file_path = "/content/drive/MyDrive/bboxes/bboxes/%s.txt"
-# Merge config dictionary
+__C.DATASETS.kitti.partial_points_path = "./datasets/data/cars/cars/%s.pcd"
+# bboxes represents boundary boxes of each test image
+# bboxes calculation can be seen in colab-notebooks/helper-notebooks/3D_construction_helper.ipynb
+__C.DATASETS.kitti.bounding_box_file_path = "./datasets/data/bboxes/bboxes/%s.txt"
+
 
 # Merge config dictionary
-
-
 def _merge_a_into_b(a, b):
     """Merge config dictionary a into config dictionary b, clobbering the options in b whenever they are also specified in a."""
     if type(a) is not edict:
